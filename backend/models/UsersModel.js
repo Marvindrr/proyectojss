@@ -13,16 +13,5 @@ const UserSchema = new Schema({
         type: String,
         required: true
     },
-    lastUser: {
-        name: {
-            type: String,
-        },
-        password: {
-            type: String,
-        },
-        email: {
-            type: String,
-        }
-    }
 });
 export const UserModel = model("users", UserSchema);

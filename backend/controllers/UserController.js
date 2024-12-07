@@ -1,10 +1,3 @@
-//Crear usuarios
-//Eliminar usuarios
-//Actualizar Usuario
-//Traer usuarios
-//Traer UN usuario
-//Logear usuario
-
 import { UserModel } from "../models/UsersModel.js";
 import jwt from "jsonwebtoken";
 
@@ -87,11 +80,6 @@ export default {
                     name,
                     password,
                     email,
-                    lastUser:{
-                        name:prevUser.name,
-                        password:prevUser.password,
-                        email:prevUser.email
-                    }
                 }
             });
             res.status(200).json({
